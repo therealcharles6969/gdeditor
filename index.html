@@ -32,18 +32,40 @@
 <h1>Everything other than that belongs to RubRub.</h1>
 </center>
 
-	<div id="simple-cookie-consent">
-  <div class="cookie-consent-container">
-    <div class="cookie-consent-notice">
-      <h4>We like money</h4>
-      <hr>
-      <p>This website uses ads to give our users the best experience. And by that we mean we ensure we make the most money from selling your <a href="https://www.sketchywebsite.net/">data</a>.</p>
+	<div class="cookieModal"></div>
+	
+<div class="accept-cookie">
+    <div style="background: transparent;width: 100%;height: 100%;top:-20vh; display: none;" class="customize-cookie-popup">
+        <div style="margin: 0px 0px 12px 0px;">
+            <input type="checkbox" checked="" disabled=""> Necessary cookies ( To move around the website and use its features ) 
+            <br>
+            <!-- <input type="checkbox" value="func" onchange="onCookieSelect(this)"> Functional Cookies <br> -->
+            <input type="checkbox" value="adv" onchange="onCookieSelect(this)"> Analytics &amp; Third Party Advertising Partner cookies ( Google analytics and related third party for tracking purposes) Cookies <br>
+        </div>
+        <div class="custombtnwrapper" style="float: left; display: flex; justify-content: flex-end;">
+            <a href="javascript:void(0);" role="button" onclick="goBackToCookieConsent()" class="btn btn-normal cookie-button btn-p" data-event-action="Click - Accept All" data-event-category="Footer" data-event-label="Accept All">
+                Cancel
+            </a>
+            <a style="margin-left: 8px;" href="javascript:void(0);" role="button" onclick="confirmCustomizeCookies()" class="btn btn-p cookie-button" data-event-action="Click - Accept All" data-event-category="Footer" data-event-label="Accept All">
+                Confirm
+            </a>
+        </div>
     </div>
-    <div class="cookie-consent-selection">
-      <button value="true" class="cookie-consent-allow">Go away</button>
+    <div class="accept-cookie-inner">
+        
+        <div class="cookie-content">We use third-party cookies to measure website performance, analytics, personalize content and ads for you. Read our <a href="https://www.inmobi.com/website-cookie-policy" target="_blank" classname="cookie-link">cookie policy</a> for more details.</div>
+        <div class="button-continer">
+            <a href="javascript:void(0);" role="button" onclick="cookieUtils.rejectAllCookies()" class="btn btn-normal cookie-button btn-p" data-event-action="Click - Accept All" data-event-category="Footer" data-event-label="Accept All">
+                Decline
+            </a>
+            <a href="javascript:void(0);" role="button" onclick="customizeCookies()" class="btn btn-normal cookie-button btn-p" data-event-action="Click - Accept All" data-event-category="Footer" data-event-label="Accept All">
+                Customize
+            </a>
+            <a href="javascript:void(0);" role="button" onclick="acceptEveryCookie()" class="btn btn-p" data-event-action="Click - Accept All" data-event-category="Footer" data-event-label="Accept All">
+                Accept All
+            </a>
+        </div>
     </div>
-  </div>
-</div>
 </div>
 
 </body>
