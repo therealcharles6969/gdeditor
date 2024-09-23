@@ -1,0 +1,39 @@
+<html lang="en"><head>
+		<meta charset="utf-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0">
+		<meta name="theme-color" content="#000000">
+		
+		
+		
+		<link rel="stylesheet" href="https://hackertyper.net//main.css?v=1.22">
+		
+		
+		<title>Console</title>
+	</head>
+	<body style="color: rgb(0, 255, 0);">
+		
+		<div id="main" class="main theme_color" style="color: rgb(0, 255, 0);">
+			<noscript>Error...</noscript>
+			
+			<pre><span id="typer" class="typer" style="font-size: 13px; font-family: Courier;">struct group_info init_groups = { .usage = ATOMIC_INIT(2) };
+
+struct group_info *groups_alloc(int gidsetsize){
+
+	struct group_info *group_info;
+
+	int nblocks;
+
+	int i;
+
+
+
+	nb</span><span id="cursor" style="font-size: 13px; color: inherit;">|</span><div id="bottom_padding" class="bottom_padding"></div></pre>
+		</div>
+		
+
+		
+		<script type="application/javascript" src="https://hackertyper.net//main.js?v=1.84"></script>
+	
+
+</body></html>
