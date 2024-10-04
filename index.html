@@ -897,14 +897,27 @@ a::after {
   <p class="output">Welcome</p>
 	  <p class="output">Here is a little thing to get you get around:</p>
 
-<select>
-	<option>Click here!</option>
-	<a href="hacks.html"><option>Hacks</option</a>
-	<a href="games.html"><option>Games</option</a>
-	<a href="404.html"><option>Other</option></a>
+<select id="menu">
+	<option value="">Click here!</option>
+	<option value="/hacks.html">Hacks</option
+	<option value="/games.html">Games</option
+	<option value="https://www.sketchywebsite.net/">Other</option>
 </select>
 
-<button>GO!</button>
+<button id="goButton">GO!</button>
+
+<script>
+
+   document.getElementById('goButton').onclick = function() {
+            const selectedSite = document.getElementById('menu').value;
+            if (selectedSite) {
+                window.location.href = selectedSite;
+            } else {
+                 window.location.href = https://youareanidiot.cc/lol.html;
+            }
+        };
+	
+</script>
 	
   <p class="output">BEAT THIS TO WIN $1001001011011001010101 (binary)</p>
 <iframe src="task.html" allowtransparency="true" width="375" height="352" frameborder="0" scrolling="no" allowfullscreen class="output"></iframe>
