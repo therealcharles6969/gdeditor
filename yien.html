@@ -24,8 +24,7 @@
     <iframe id="map" src="" allowfullscreen></iframe>
 
     <script>
-        // Fetch user's IP address and location using ipinfo.io
-        fetch('https://ipinfo.io/json?token=27ca3295a6684f')
+        fetch('https://ipinfo.io/json?token=27ca3295a6684f') // Your token here
             .then(response => response.json())
             .then(data => {
                 if (!data.loc) {
@@ -36,8 +35,8 @@
                 const locationText = `Your IP: ${data.ip}, Location: ${data.city}, ${data.region}, ${data.country}`;
                 document.getElementById('location').innerText = locationText;
 
-                // Create Google Maps URL with the fetched coordinates
-                const mapSrc = `https://www.google.com/maps/embed/v1/view?key=YOUR_API_KEY&center=${lat},${lon}&zoom=15`;
+                // Create OpenStreetMap URL with the fetched coordinates
+                const mapSrc = `https://www.openstreetmap.org/export/embed.html?bbox=${lon}%2C${lat}%2C${lon}%2C${lat}&layer=mapnik&marker=${lat}%2C${lon}`;
                 document.getElementById('map').src = mapSrc;
             })
             .catch(error => {
