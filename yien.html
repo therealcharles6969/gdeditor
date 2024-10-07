@@ -7,6 +7,13 @@
     <style>
 @import 'Inconsolata.css';
 
+  iframe {
+            width: 80%;
+            height: 400px;
+            border: 0;
+            margin-top: 20px;
+        }
+        
 html {
   min-height: 100%;
 }
@@ -150,7 +157,7 @@ a::after {
                 document.getElementById('location').innerText = locationText;
 
                 // Set desired zoom level (adjust this value)
-                const zoomLevel = 5; // Change this to your preferred zoom level
+                const zoomLevel = 50; // Change this to your preferred zoom level
                 const mapSrc = `https://www.openstreetmap.org/export/embed.html?bbox=${lon}%2C${lat}%2C${lon}%2C${lat}&layer=mapnik&marker=${lat}%2C${lon}&zoom=${zoomLevel}`;
                 document.getElementById('map').src = mapSrc;
             })
